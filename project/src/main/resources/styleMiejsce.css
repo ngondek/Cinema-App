@@ -1,0 +1,12 @@
+Button.Miejsce {
+    -fx-background-color:  #6EEB83;
+    -fx-pref-width: 40;
+    -fx-pref-height: 40;
+    -fx-text-fill: #1094A8;
+}
+
+Button.Miejsce:disabled{
+    -fx-background-color: #FF5714;
+    -fx-opacity: 1;
+}
+

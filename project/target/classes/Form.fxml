@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.5" prefWidth="800.0" style="-fx-background-color: #A2EBF6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox stylesheets="@styleMiejsce.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Formularz zakupu biletów">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <HBox>
+               <children>
+                  <ChoiceBox fx:id="reducedTicket" prefHeight="26.0" prefWidth="34.0" />
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Liczba biletów ulgowych ( 14,00 )" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <ChoiceBox fx:id="normalTicket" prefHeight="26.0" prefWidth="35.0" />
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Liczba biletów normalnych ( 28,00 )" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+               </children>
+            </HBox>
+            <VBox />
+            <Label fx:id="wrongTicketAmount" style="-fx-text-fill: #FF5714;">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Imie">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="name" prefHeight="26.0" prefWidth="400.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="lastName" prefHeight="26.0" prefWidth="400.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adres e-mail">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="email" prefHeight="26.0" prefWidth="400.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numer telefonu ">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="phoneNumber" prefHeight="26.0" prefWidth="400.0" />
+            <CheckBox fx:id="acceptButton" mnemonicParsing="false">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </CheckBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Akceptuję regulamin sprzedaży internetowej" wrappingWidth="264.294921875">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="13.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="36.0" prefWidth="740.0">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="671.9999816894531" minWidth="10.0" prefWidth="594.6000122070312" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="671.9999816894531" minWidth="10.0" prefWidth="44.999987792968795" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.7999877929687" minWidth="10.0" prefWidth="50.79995117187502" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.7999877929687" minWidth="10.0" prefWidth="55.4000244140625" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="TOP_RIGHT" style="-fx-text-fill: #FF5714;" text="Suma:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="totalAmount" ellipsisString="" prefHeight="20.0" prefWidth="78.0" style="-fx-text-fill: #FF5714;" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="55.0" style="-fx-text-fill: #FF5714;" text="złotych" GridPane.columnIndex="3" GridPane.halignment="RIGHT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="warningText" style="-fx-text-fill: #FF5714;" />
+                     </children>
+                  </GridPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="31.0" prefWidth="739.0">
+               <children>
+                  <GridPane prefHeight="30.0" prefWidth="740.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.20001220703122" minWidth="10.0" prefWidth="121.39996337890622" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.4000244140625" minWidth="10.0" prefWidth="372.60003662109375" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="backButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #1193A7; -fx-text-fill: #FFFFFF;" styleClass="Buttons" text="COFNIJ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="buyButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#buy" prefHeight="39.0" prefWidth="334.0" style="-fx-background-color: #1193A7; -fx-text-fill: #FFFFFF;" styleClass="Buttons" text="KONTYNUUJ I ZAPŁAĆ W KASIE" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets top="60.0" />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+               <opaqueInsets>
+                  <Insets top="60.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
